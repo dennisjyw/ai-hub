@@ -1,0 +1,62 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "start",
+      "type": "ellipse",
+      "x": 300,
+      "y": 50,
+      "width": 120,
+      "height": 80,
+      "backgroundColor": "#d0f0c0",
+      "text": "開始",
+      "fontSize": 18,
+      "textAlign": "center",
+      "verticalAlign": "middle"
+    },
+    {
+      "id": "step1",
+      "type": "rectangle",
+      "x": 260,
+      "y": 180,
+      "width": 200,
+      "height": 80,
+      "backgroundColor": "#b2f2bb",
+      "text": "步驟 1",
+      "fontSize": 20,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "arrow1",
+      "type": "arrow",
+      "x": 360,
+      "y": 130,
+      "width": 0,
+      "height": 50,
+      "points": [[0, 0], [0, 50]],
+      "roundness": { "type": 2 }
+    },
+    {
+      "id": "end",
+      "type": "ellipse",
+      "x": 300,
+      "y": 500,
+      "width": 120,
+      "height": 80,
+      "backgroundColor": "#ffc9c9",
+      "text": "結束",
+      "fontSize": 18,
+      "textAlign": "center",
+      "verticalAlign": "middle"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": 20
+  },
+  "files": {}
+}

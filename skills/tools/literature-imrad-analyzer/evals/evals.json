@@ -1,0 +1,133 @@
+{
+  "evals": [
+    {
+      "id": "standard-quantitative-paper",
+      "prompt": "請幫我分析這篇論文的 IMRaD 結構,特別注意研究方法、變項定義和統計分析的部分。",
+      "files": [],
+      "expectations": [
+        "輸出包含完整的四個 IMRaD 部分分析(Introduction, Method, Results, Discussion)",
+        "Method 部分清楚列出研究設計類型、樣本數、自變項與依變項",
+        "Results 部分提取主要統計發現(包含具體數值)",
+        "Discussion 部分列出研究限制",
+        "產出整合摘要表格",
+        "使用繁體中文輸出",
+        "專有名詞有中英對照",
+        "輸出檔案儲存至 /mnt/user-data/outputs/",
+        "檔案格式為 Markdown (.md)",
+        "整體結構清晰,使用適當的標題層級和清單"
+      ]
+    },
+    {
+      "id": "qualitative-research-paper",
+      "prompt": "這是一篇質性研究的論文,請幫我拆解結構並整理研究方法。",
+      "files": [],
+      "expectations": [
+        "辨識出這是質性研究",
+        "說明論文的實際結構(可能不是標準 IMRaD)",
+        "Method 部分描述質性研究設計(如紮根理論、現象學等)",
+        "提取資料收集方法(訪談、觀察等)",
+        "說明資料分析方法(主題分析、內容分析等)",
+        "Discussion 部分整理研究限制與未來方向",
+        "使用繁體中文輸出"
+      ]
+    },
+    {
+      "id": "request-word-output",
+      "prompt": "請分析這篇論文的 IMRaD 結構,並產出 Word 檔案讓我可以編輯。",
+      "files": [],
+      "expectations": [
+        "完成完整的 IMRaD 分析",
+        "產出 .docx Word 檔案",
+        "Word 檔案包含適當的標題樣式",
+        "Word 檔案包含表格格式",
+        "檔案儲存至 /mnt/user-data/outputs/",
+        "提供檔案下載連結"
+      ]
+    },
+    {
+      "id": "focus-on-methodology",
+      "prompt": "我特別想了解這篇論文的研究方法,包括變項如何測量、用了什麼統計方法。",
+      "files": [],
+      "expectations": [
+        "深入分析 Method 部分",
+        "清楚列出所有變項及其操作型定義",
+        "列出測量工具及其信效度資訊(如果論文有提供)",
+        "詳細說明統計分析方法",
+        "提供「方法論學習重點」區塊",
+        "使用繁體中文輸出"
+      ]
+    },
+    {
+      "id": "extract-limitations",
+      "prompt": "幫我整理這篇論文的研究限制,我在準備文獻回顧時需要這個資訊。",
+      "files": [],
+      "expectations": [
+        "完整分析 Discussion 部分",
+        "明確列出所有研究限制",
+        "說明每個限制可能造成的影響",
+        "提供未來研究方向的整理",
+        "如果論文沒有明確的限制段落,也要嘗試從內容中推斷可能的限制",
+        "使用繁體中文輸出"
+      ]
+    },
+    {
+      "id": "bilingual-output",
+      "prompt": "請用中英雙語分析這篇論文的 IMRaD 結構。",
+      "files": [],
+      "expectations": [
+        "完成完整的 IMRaD 分析",
+        "關鍵內容同時提供中文和英文",
+        "專有名詞有中英對照",
+        "輸出格式清晰,中英文內容易於區分"
+      ]
+    },
+    {
+      "id": "simple-structure-query",
+      "prompt": "幫我看一下這篇 paper 的結構",
+      "files": [],
+      "expectations": [
+        "辨識使用者想要進行 IMRaD 分析",
+        "進行完整的結構拆解",
+        "產出標準的分析報告",
+        "使用繁體中文輸出",
+        "提供檔案下載連結"
+      ]
+    },
+    {
+      "id": "multiple-papers-comparison",
+      "prompt": "我上傳了三篇相關主題的論文,請幫我比較它們的研究方法和主要發現。",
+      "files": [],
+      "expectations": [
+        "辨識這是多篇論文的批次分析",
+        "對每篇論文進行個別 IMRaD 分析",
+        "產出比較表格,包含研究方法、樣本、主要發現、限制等欄位",
+        "指出三篇論文的異同點",
+        "使用繁體中文輸出"
+      ]
+    },
+    {
+      "id": "non-standard-structure-handling",
+      "prompt": "請分析這篇論文的結構",
+      "files": [],
+      "expectations": [
+        "如果論文不是標準 IMRaD 結構,要明確說明",
+        "說明論文的實際結構安排",
+        "盡可能將內容對應到 IMRaD 邏輯",
+        "標註「本論文採用 [實際結構] 而非標準 IMRaD」",
+        "仍然提供結構化的分析"
+      ]
+    },
+    {
+      "id": "english-output-request",
+      "prompt": "Please analyze the IMRaD structure of this paper in English.",
+      "files": [],
+      "expectations": [
+        "辨識使用者要求英文輸出",
+        "使用英文進行完整的 IMRaD 分析",
+        "輸出格式與中文版本一致",
+        "所有標題、說明都使用英文",
+        "仍保留論文原文的專有名詞"
+      ]
+    }
+  ]
+}

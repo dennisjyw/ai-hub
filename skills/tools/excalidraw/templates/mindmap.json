@@ -1,0 +1,49 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "center",
+      "type": "ellipse",
+      "x": 350,
+      "y": 250,
+      "width": 150,
+      "height": 100,
+      "backgroundColor": "#ffd43b",
+      "text": "中心主題",
+      "fontSize": 20,
+      "textAlign": "center",
+      "verticalAlign": "middle"
+    },
+    {
+      "id": "branch1",
+      "type": "rectangle",
+      "x": 550,
+      "y": 150,
+      "width": 150,
+      "height": 60,
+      "backgroundColor": "#a5d8ff",
+      "text": "分支 1",
+      "fontSize": 16,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "line1",
+      "type": "arrow",
+      "x": 500,
+      "y": 275,
+      "width": 50,
+      "height": 100,
+      "points": [[0, 0], [50, -100]],
+      "roundness": { "type": 2 }
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": 20
+  },
+  "files": {}
+}
