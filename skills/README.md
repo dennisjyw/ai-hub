@@ -27,9 +27,6 @@
 | `pptx` | 當主要輸入或輸出是 PowerPoint `.pptx`，且任務涉及建立、修改、整理或抽取簡報內容時使用。 | `skills/tools/pptx/` |
 | `auth` | 當使用者提到「註冊」、「登入」、「用戶認證」、「帳號系統」或需要實作身份驗證功能時使用。 | `skills/tools/auth/` |
 | `skill-creator` | 當要建立新 skill、改寫既有 skill、瘦身 `SKILL.md`、優化 trigger 或做 skill 評估時使用。 | `skills/tools/skill-creator/` |
-| `tw-academic-literature-collector` | 當需要蒐集台灣學術文獻、進行文獻回顧、需要 APA 格式引文整理時使用。輸出 Excel、Word、視覺化網絡圖、AI 缺口分析。 | `skills/tools/tw-academic-literature-collector/` |
-| `literature-imrad-analyzer` | 當使用者上傳 PDF 論文並要求分析、拆解結構、整理方法或說「幫我讀這篇 paper」時使用。 | `skills/tools/literature-imrad-analyzer/` |
-| `citation-integrity-assistant` | 當使用者要查引用是否存在、補充文獻、追蹤理論源頭或找替代文獻時使用。 | `skills/tools/citation-integrity-assistant/` |
 | `design-library` | 當要參考 Stripe、Linear、Apple、Figma 等知名產品的設計語言時使用。 | `skills/design/design-library/` |
 | `design-kungfu` | 當說「幫我設計一個...」、「給我推薦設計風格」、「設計建議」時使用。 | `skills/design/design-kungfu/` |
 | `clone-website` | 當要 clone、重建或高擬真還原現有網站頁面時使用。 | `skills/frontend/clone-website/` |
@@ -38,12 +35,7 @@
 | `react-best-practices` | 當編寫、審查或重構 React/Next.js 代碼，需要性能優化指南時使用。 | `skills/frontend/react-best-practices/` |
 | `tailwind` | 當要用 Tailwind CSS 建立設計系統、遷移至 v4、實作設計令牌，或需要打磨 UI 細節時使用。 | `skills/frontend/tailwind/` |
 | `neat` | 當對話結束後要同步文件、更新記憶、清理過期資訊，或使用者說「整理一下文件」、「更新記憶」時使用。 | `skills/tools/neat/` |
-| `excalidraw` | 當使用者要求「建立圖表」、「畫流程圖」、「繪製架構圖」、「建立心智圖」或產生 .excalidraw 檔案時使用。 | `skills/tools/excalidraw/` |
 | `shadcn` | 當任務涉及 shadcn/ui 元件安裝、選型、表單、圖表或 theme 整合時使用。 | `skills/frontend/shadcn/` |
-| `obsidian-markdown` | 當要建立或修改 Obsidian 筆記，且需要 wikilinks、callouts、embeds 或 properties 時使用。 | `skills/obsidian/markdown/` |
-| `obsidian-bases` | 當要建立或修改 Obsidian `.base`、views、filters、formulas 或 summaries 時使用。 | `skills/obsidian/bases/` |
-| `json-canvas` | 當要建立或修改 Obsidian `.canvas`、節點、連線、群組或視覺流程圖時使用。 | `skills/obsidian/canvas/` |
-| `obsidian-cli` | 當要用 Obsidian CLI 搜尋、建立、更新或批次管理 vault 內容時使用。 | `skills/obsidian/cli/` |
 | `brainstorming` | 當要進行任何創意工作（新功能、元件、行為修改）前，必須先探索需求與設計時使用。 | `skills/brainstorming/` |
 | `pua` | 當任務連續失敗 2 次以上、開始卡循環、想放棄或想把工作推回給使用者時必須使用。 | `skills/pua/` |
 

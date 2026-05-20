@@ -58,10 +58,54 @@
 - 簡短任務用短回覆；多步任務用精簡段落或表格，避免不必要長篇。
 - 回報變更時說清楚改了什麼、驗證了什麼、仍有什麼限制。
 
-## 記憶與文件
+## 9. 記憶系統（Obsidian 記憶）
 
-- 記憶庫位置固定為 `~/.claude/memory/`；除非使用者明確要求，不得寫入其他位置。
-- Session 開始或任務需要歷史脈絡時，優先讀取 `~/.claude/memory/MEMORY.md` 與 `~/.claude/memory/projects/{project-name}.md`（如果存在）。
-- 記憶只作為輔助脈絡；若事實可能過期且會影響判斷，應查證現況。
-- 使用記憶產出的結論若未在當輪驗證，需簡短標明它來自既有記憶，可能需要刷新。
-- 需要更新長期規則、技能或索引時，優先維持「短入口、細節下放、按需載入」的結構。
+### 路徑結構
+
+記憶庫固定位於 `~/.claude/memory/`，結構如下：
+
+```
+~/.claude/memory/
+├── MEMORY.md              # 總索引：專案清單、記憶類型、觸發規則
+├── project-memory.md      # 模板檔案（新建專案記憶時複製）
+└── projects/              # 各工作區專案記憶
+    └── {project-slug}.md  # 檔名規則：工作區絕對路徑轉換
+                           # 例：/Users/denniswang → -Users-denniswang.md
+```
+
+### 觸發規則
+
+| 時機 | 動作 |
+|------|------|
+| **Session 開始** | 讀取 `MEMORY.md` → 讀取當前工作區對應的 `projects/{name}.md` |
+| **任務需要歷史脈絡** | 主動查詢相關記憶，標明「此結論來自記憶，可能需要刷新」 |
+| **事實可能過期** | 優先查證現況，不盲從舊資訊 |
+| **Session 結束或使用者說「整理記憶」** | 更新對應記憶檔案 |
+
+### 記憶類型與檔案規範
+
+- **user**：使用者角色、目標、責任與知識背景
+- **feedback**：工作方式指導（避免什麼、繼續做什麼）
+- **project**：進行中的工作、目標、計畫或事件
+- **reference**：外部系統資源指標
+
+每則記憶檔案使用 Markdown + frontmatter：
+
+```markdown
+---
+name: {short-kebab-case-slug}
+description: {one-line summary}
+metadata:
+  type: {user, feedback, project, reference}
+---
+
+{記憶內容。feedback / project 類型需包含 **Why:** 與 **How to apply:**}
+```
+
+### 維護原則
+
+- 記憶只作為輔助脈絡，不是權威來源
+- 索引檔只保留清單與規則，細節下放至各專案記憶
+- 連結相關記憶時使用 `[[檔案名稱]]` 格式
+- 除非使用者明確要求，不得寫入 `~/.claude/memory/` 以外的位置
+- 更新長期規則、技能或索引時，優先維持「短入口、細節下放、按需載入」的結構
