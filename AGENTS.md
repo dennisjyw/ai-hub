@@ -1,8 +1,8 @@
 # AGENTS.md
 > [!IMPORTANT]
-> **請先閱讀共用設定**
-> 請閱讀 [AGENTS_DOCS.md](file:///Users/denniswang/ai-hub/AGENTS_DOCS.md) 以取得核心規則與設定。
-> 請閱讀 [skills/README.md](file:///Users/denniswang/ai-hub/skills/README.md) 以查看可用技能。
+> **先閱讀共用設定**
+> 閱讀 [AGENTS_DOCS.md](file:///Users/denniswang/ai-hub/AGENTS_DOCS.md) 以取得核心規則與設定。
+> 閱讀 [skills/README.md](file:///Users/denniswang/ai-hub/skills/README.md) 以查看可用技能。
 
 ## 專案記憶（MEMORY.md）
 
@@ -14,4 +14,4 @@
 
 ## 全域記憶系統
 
-全域 Claude 記憶庫位於 `~/.claude/memory/`，用於跨專案的使用者偏好、回饋與長期脈絡。詳見 [AGENTS_DOCS.md](AGENTS_DOCS.md) 第 9 節。
+全域 Claude 記憶庫位於 `~/.claude/memory/`，用於跨專案的使用者偏好、回饋與長期脈絡。詳見 [AGENTS_DOCS.md](AGENTS_DOCS.md) `專案記憶（MEMORY.md）`。
