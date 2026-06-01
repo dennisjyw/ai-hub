@@ -4,8 +4,10 @@
 > Please read [AGENTS_DOCS.md](file:///Users/denniswang/ai-hub/AGENTS_DOCS.md) for the core rules and configuration.
 > Please read [skills/README.md](file:///Users/denniswang/ai-hub/skills/README.md) for available skills.
 
-## Memory 系統
+## Memory System
 
-詳見 AGENTS_DOCS.md 第 9 節「Obsidian 記憶」。
+Persistent memory is stored at `/Users/denniswang/.claude/projects/-Users-denniswang-ai-hub/memory/`.
 
-本地路標：[docs/memory.md](file:///Users/denniswang/ai-hub/docs/memory.md)
+- Read `MEMORY.md` in that directory at the start of each conversation for context.
+- Save new memories (user profile, feedback, project context, references) as individual `.md` files with the required frontmatter (`name`, `description`, `metadata.type`), then add a pointer line to `MEMORY.md`.
+- Memory types: `user`, `feedback`, `project`, `reference`. See the auto memory rules in the system prompt for full spec.
