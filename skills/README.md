@@ -35,6 +35,7 @@
 | `react-best-practices` | 當編寫、審查或重構 React/Next.js 代碼，需要性能優化指南時使用。 | `skills/frontend/react-best-practices/` |
 | `tailwind` | 當要用 Tailwind CSS 建立設計系統、遷移至 v4、實作設計令牌，或需要打磨 UI 細節時使用。 | `skills/frontend/tailwind/` |
 | `neat` | 當對話結束後要同步文件、更新記憶、清理過期資訊，或使用者說「整理一下文件」、「更新記憶」時使用。 | `skills/tools/neat/` |
+| `humanizer` | 當要去除文字中的 AI 生成痕跡，使文字聽起來更自然、更像人類書寫時使用。 | `skills/tools/humanizer/` |
 | `shadcn` | 當任務涉及 shadcn/ui 元件安裝、選型、表單、圖表或 theme 整合時使用。 | `skills/frontend/shadcn/` |
 | `brainstorming` | 當要進行任何創意工作（新功能、元件、行為修改）前，必須先探索需求與設計時使用。 | `skills/brainstorming/` |
 | `pua` | 當任務連續失敗 2 次以上、開始卡循環、想放棄或想把工作推回給使用者時必須使用。 | `skills/pua/` |
