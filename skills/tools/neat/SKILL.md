@@ -1,3 +1,8 @@
+---
+name: neat
+description: 當對話結束後要同步文件、更新記憶、清理過期資訊，或使用者說「整理一下文件」、「更新記憶」時使用。這個技能負責跨層級知識同步：Agent 記憶、專案根目錄 markdown、docs/ 文件。
+---
+
 # 整理師
 
 > **跨平台 Agent 技能** — Claude Code · OpenAI Codex 通用。

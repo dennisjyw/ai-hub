@@ -14,4 +14,4 @@
 
 ## 全域記憶系統
 
-全域 Claude 記憶庫位於 `~/.claude/memory/`，用於跨專案的使用者偏好、回饋與長期脈絡。詳見 [AGENTS_DOCS.md](AGENTS_DOCS.md) `專案記憶（MEMORY.md）`。。
+全域 Claude 記憶庫位於 `~/.claude/memory/`，用於跨專案的使用者偏好、回饋與長期脈絡。詳見 [AGENTS_DOCS.md](AGENTS_DOCS.md) `專案記憶（MEMORY.md）`。

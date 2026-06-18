@@ -26,8 +26,8 @@
 | `xlsx` | 當主要輸入或輸出是 Excel `.xlsx`，且任務涉及讀寫、整理、重算或模板更新時使用。 | `skills/tools/xlsx/` |
 | `pptx` | 當主要輸入或輸出是 PowerPoint `.pptx`，且任務涉及建立、修改、整理或抽取簡報內容時使用。 | `skills/tools/pptx/` |
 | `auth` | 當使用者提到「註冊」、「登入」、「用戶認證」、「帳號系統」或需要實作身份驗證功能時使用。 | `skills/tools/auth/` |
-| `skill-creator` | 當要建立新 skill、改寫既有 skill、瘦身 `SKILL.md`、優化 trigger 或做 skill 評估時使用。 | `skills/tools/skill-creator/` |
-| `design-library` | 當要參考 Stripe、Linear、Apple、Figma 等知名產品的設計語言時使用。 | `skills/design/design-library/` |
+| `skill-creator` | 當要建立新 skill、改寫既有 skill、優化觸發描述、做技能評估、比較新舊版本表現，或要求依照 skill 標準規範檢查整包技能時使用。 | `skills/tools/skill-creator/` |
+| `design-library` | 當使用者想參考 Stripe、Linear、Apple、Figma、Vercel 等知名產品的設計語言，或要求「做得像某個品牌／某種風格」時使用。 | `skills/design/design-library/` |
 | `design-kungfu` | 當說「幫我設計一個...」、「給我推薦設計風格」、「設計建議」時使用。 | `skills/design/design-kungfu/` |
 | `clone-website` | 當要 clone、重建或高擬真還原現有網站頁面時使用。 | `skills/frontend/clone-website/` |
 | `frontend-design` | 當要做前端介面設計、改版、設計 review 或使用 `/audit`、`/polish` 等子技能時使用。 | `skills/frontend/frontend-design/` |
@@ -39,6 +39,10 @@
 | `shadcn` | 當任務涉及 shadcn/ui 元件安裝、選型、表單、圖表或 theme 整合時使用。 | `skills/frontend/shadcn/` |
 | `brainstorming` | 當要進行任何創意工作（新功能、元件、行為修改）前，必須先探索需求與設計時使用。 | `skills/brainstorming/` |
 | `pua` | 當任務連續失敗 2 次以上、開始卡循環、想放棄或想把工作推回給使用者時必須使用。 | `skills/pua/` |
+| `obsidian-bases` | 當使用者要建立或修改 Obsidian `.base` 檔、做 table／cards／list／map 視圖、設定 filters、formulas、summaries 或疑難排解 Base YAML 時使用。 | `skills/obsidian/bases/` |
+| `obsidian-canvas` | 當使用者要建立或編輯 Obsidian `.canvas` 檔、安排節點、連線、群組、視覺流程圖或排版現有 JSON Canvas 時使用。 | `skills/obsidian/canvas/` |
+| `obsidian-cli` | 當使用者要用 Obsidian CLI 讀寫 vault、建立／搜尋筆記、批次改 properties、處理 tasks 或管理內容時使用。 | `skills/obsidian/cli/` |
+| `obsidian-markdown` | 當使用者要建立或修改 Obsidian 筆記，且需要 wikilinks、embeds、callouts、frontmatter properties、tags 或其他 Obsidian Markdown 語法時使用。 | `skills/obsidian/markdown/` |
 
 ## 維護原則
 - 新增技能時，先確保 `name`、`description` 與 trigger 文案一致，再補進本索引。
