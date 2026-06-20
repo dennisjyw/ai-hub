@@ -16,6 +16,9 @@
 * `src/excel_handler.py`: 載入知識樹、難度評分，匯出 CSV。
 * `src/models.py`: `Question` 資料模型，定義題目完整屬性。
 * `src/teacher_exam_parser.py`: 教師檢定專用解析器（保留既有功能）。
+* `scripts/convert_math_csv_to_latex_template.py`: 將既有會考數學主檔轉為 `template.csv` schema，並做 LaTeX 友善符號轉換。
+* `scripts/render_pdf_pages_to_latex_assets.py`: 將每年度數學 PDF 逐頁渲染為 `output/latex/assets/{year}/page-XX.png`。
+* `scripts/extract_individual_fig_assets.py`: 從逐頁 PNG 自動裁切 individual figure assets，輸出 `{year}-math-assets/fig-XX.png` 與索引。
 
 ## 支援的題目格式
 
@@ -74,7 +77,41 @@ python -m src.main \
   --year 114
 ```
 
-### 方法三：處理 Word 文件
+### 方法三：既有數學主檔轉 LaTeX template CSV
+
+適合已經有 `歷屆試題-Final/歷屆試題-數學.csv`、`template.csv` 與年度 PDF 題本時使用：
+
+```bash
+python scripts/convert_math_csv_to_latex_template.py --root /path/to/project
+```
+
+輸出：
+
+- `output/csv/all-years-math-latex-template.csv`
+- `output/csv/by-year/{year}-math-latex-template.csv`
+
+### 方法四：輸出 LaTeX 圖片資源
+
+先將 PDF 逐頁渲染：
+
+```bash
+python scripts/render_pdf_pages_to_latex_assets.py --root /path/to/project --dpi 180
+```
+
+再自動裁切題圖候選：
+
+```bash
+python scripts/extract_individual_fig_assets.py --root /path/to/project --years 102-114
+```
+
+輸出：
+
+- `output/latex/assets/{year}/page-XX.png`
+- `output/latex/{year}-math-assets/fig-XX.png`
+- `output/latex/assets/index.csv`
+- `output/latex/figure-assets-index.csv`
+
+### 方法五：處理 Word 文件
 
 ```bash
 python -m src.main \
@@ -99,3 +136,5 @@ python -m src.main \
 - `run.py` 以腳本所在目錄為基準，不依賴 shell 工作目錄
 - `src/pdf_parser.py` 依賴 `pdftotext`（poppler）與 `PyMuPDF`（fitz）
 - 若未安裝 `PyMuPDF`，文字解析仍正常運作，僅跳過圖片擷取
+- LaTeX template CSV 與 figure assets 的批次腳本以 `--root` 指向題庫工作區，避免綁死 skill 目錄。
+- 自動裁切的 individual figure assets 是候選資源；若要出版級品質，仍需逐張人工抽查。
