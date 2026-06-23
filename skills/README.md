@@ -29,6 +29,7 @@
 | `skill-creator` | 當要建立新 skill、改寫既有 skill、優化觸發描述、做技能評估、比較新舊版本表現，或要求依照 skill 標準規範檢查整包技能時使用。 | `skills/tools/skill-creator/` |
 | `design-library` | 當使用者想參考 Stripe、Linear、Apple、Figma、Vercel 等知名產品的設計語言，或要求「做得像某個品牌／某種風格」時使用。 | `skills/design/design-library/` |
 | `design-kungfu` | 當說「幫我設計一個...」、「給我推薦設計風格」、「設計建議」時使用。 | `skills/design/design-kungfu/` |
+| `vercel-design` | 當要以 Vercel 設計語言製作 UI、landing page、dashboard 或元件，或使用者提到 Vercel 風格時使用。 | `skills/design/vercel/` |
 | `clone-website` | 當要 clone、重建或高擬真還原現有網站頁面時使用。 | `skills/frontend/clone-website/` |
 | `frontend-design` | 當要做前端介面設計、改版、設計 review 或使用 `/audit`、`/polish` 等子技能時使用。 | `skills/frontend/frontend-design/` |
 | `impeccable` | 當需要高品質前端設計總控，或說「讓設計更大膽」、「簡化介面」等自然語言需求時使用。 | `skills/frontend/impeccable/` |
@@ -36,7 +37,9 @@
 | `tailwind` | 當要用 Tailwind CSS 建立設計系統、遷移至 v4、實作設計令牌，或需要打磨 UI 細節時使用。 | `skills/frontend/tailwind/` |
 | `neat` | 當對話結束後要同步文件、更新記憶、清理過期資訊，或使用者說「整理一下文件」、「更新記憶」時使用。 | `skills/tools/neat/` |
 | `humanizer` | 當要去除文字中的 AI 生成痕跡，使文字聽起來更自然、更像人類書寫時使用。 | `skills/tools/humanizer/` |
-| `shadcn` | 當任務涉及 shadcn/ui 元件安裝、選型、表單、圖表或 theme 整合時使用。 | `skills/frontend/shadcn/` |
+| `shadcn` | 當任務涉及 shadcn/ui 元件安裝、選型、表單、圖表、theme、registry 或 preset 整合時使用。 | `skills/frontend/shadcn/` |
+| `gsap` | 當任務涉及 GSAP 動畫、時間軸、ScrollTrigger、滾動動畫、SVG 動畫、拖拽互動或動畫效能優化時使用。 | `skills/frontend/gsap/` |
+| `text-to-lottie` | 當要建立、產生、編輯或修復 Lottie 動畫 JSON，或使用者要求「做一個動畫」載入時使用。 | `skills/frontend/text-to-lottie/` |
 | `brainstorming` | 當要進行任何創意工作（新功能、元件、行為修改）前，必須先探索需求與設計時使用。 | `skills/brainstorming/` |
 | `pua` | 當任務連續失敗 2 次以上、開始卡循環、想放棄或想把工作推回給使用者時必須使用。 | `skills/pua/` |
 | `obsidian-bases` | 當使用者要建立或修改 Obsidian `.base` 檔、做 table／cards／list／map 視圖、設定 filters、formulas、summaries 或疑難排解 Base YAML 時使用。 | `skills/obsidian/bases/` |
