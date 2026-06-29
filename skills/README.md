@@ -19,6 +19,7 @@
 | `pm-ios` | 當需求明確是 iPhone、iPad、iOS app、Apple HIG 或 iOS 優先專案時使用。 | `skills/product/pm-ios/` |
 | `pm-assistant` | 當提到需求分析、PRD、用戶故事、產品規劃、競品分析、OKR、路線圖時使用。 | `skills/product/pm-assistant/` |
 | `tech-lead-mentor` | 當要新增功能、重構、做工程決策或拆技術風險時使用。 | `skills/engineering/tech-lead-mentor/` |
+| `security-audit` | 當要對 codebase 做安全審計、抓漏洞、安全 review、滲透測試或 pen-test 時使用。 | `skills/engineering/security-audit/` |
 | `n8n-agent` | 當需求核心是 n8n workflow、AI Agent 流程或可匯入的 workflow JSON 時使用。 | `skills/automation/n8n-agent/` |
 | `question-workflow` | 當要整理題庫欄位、轉結構化 CSV、補解析、做 explanation 改寫或補難度時使用。 | `skills/automation/question-workflow/` |
 | `pdf` | 當主要輸入或輸出是 PDF，且任務涉及讀取、拆併、抽字、OCR 或文件操作時使用。 | `skills/tools/pdf/` |
@@ -38,6 +39,7 @@
 | `neat` | 當對話結束後要同步文件、更新記憶、清理過期資訊，或使用者說「整理一下文件」、「更新記憶」時使用。 | `skills/tools/neat/` |
 | `humanizer` | 當要去除文字中的 AI 生成痕跡，使文字聽起來更自然、更像人類書寫時使用。 | `skills/tools/humanizer/` |
 | `shadcn` | 當任務涉及 shadcn/ui 元件安裝、選型、表單、圖表、theme、registry 或 preset 整合時使用。 | `skills/frontend/shadcn/` |
+| `lucide` | 當任務涉及 icon 套件選型、安裝、整合到 React / Vue / Svelte / Angular / 純 HTML 專案,或要從 Font Awesome / Material / Heroicons / Tabler / react-icons 評估與遷移時使用。 | `skills/frontend/lucide/` |
 | `gsap` | 當任務涉及 GSAP 動畫、時間軸、ScrollTrigger、滾動動畫、SVG 動畫、拖拽互動或動畫效能優化時使用。 | `skills/frontend/gsap/` |
 | `text-to-lottie` | 當要建立、產生、編輯或修復 Lottie 動畫 JSON，或使用者要求「做一個動畫」載入時使用。 | `skills/frontend/text-to-lottie/` |
 | `brainstorming` | 當要進行任何創意工作（新功能、元件、行為修改）前，必須先探索需求與設計時使用。 | `skills/brainstorming/` |
